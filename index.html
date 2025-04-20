@@ -3,74 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tanish Gupta Portfolio</title>
+  <title>Tanish Rajgarhia | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <ul class="navbar">
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header class="header">
-    <img src="profile-photo.png" alt="Tanish Profile Photo" class="profile-pic" />
-    <div class="intro">
-      <h1>Tanish Gupta</h1>
-      <h3>Finance Enthusiast | CA Aspirant | Startup Explorer | Masters' Union Cohort 28</h3>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Tanish Rajgarhia</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="resume-btn">Download Resume</a>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hi, I'm Tanish — a curious builder who thrives on action. Currently pursuing Business & Entrepreneurship at Masters' Union and Chartered Accountancy, I’m deeply passionate about finance and startups.</p>
-      <p>From winning national-level finance competitions at IIT Bombay and IIM Ranchi to building “Acilert” — an accident alert system that saves lives — I’ve worn many hats. I also co-founded a luxury cab startup “Paalki” and recently launched “Snoozed In”, a global sleeping pod booking platform.</p>
-      <p>Whether it's pitching at college fests, strategizing for cricket matches, or building a sustainability page — I love creating and leading. My story is about learning, building, failing fast, and rising stronger. This is just the beginning.</p>
-    </section>
+  <section class="hero">
+    <div class="container hero-content">
+      <img src="profile.png" alt="Tanish Rajgarhia" class="profile-pic">
+      <div>
+        <h2 class="tagline">Finance Enthusiast | CA Aspirant | Startup Explorer</h2>
+        <p class="intro-text">Hi, I'm Tanish — someone driven by curiosity and action. Currently part of the Masters' Union Cohort 28, pursuing Chartered Accountancy and building startups that solve real problems.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="education">
+  <section class="content-section" id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’ve worn many hats — from winning at IIT Bombay and IIM Ranchi, to building "Acilert" (an accident alert system), launching "Paalki" (a luxury cab service), and recently working on "Snoozed In" — a global sleeping pod booking platform. I love pitching, building, failing fast, and leading forward.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
       <h2>Education</h2>
       <ul>
         <li>Masters' Union – Business & Entrepreneurship (Present)</li>
-        <li>Chartered Accountancy (CA) – Ongoing, Cleared CA Foundation</li>
-        <li>High School – Scored top grades in Accounts and Economics</li>
+        <li>Chartered Accountancy – Cleared Foundation (Ongoing)</li>
+        <li>High School – Scored excellent grades in Accounts and Economics</li>
       </ul>
-    </section>
 
-    <section id="projects">
-      <h2>Experience & Projects</h2>
+      <h2 id="projects">Experience & Projects</h2>
       <ul>
-        <li><strong>Acilert</strong>: Accident detection system designed to save lives using rapid alert tech</li>
-        <li><strong>Paalki</strong>: Co-founder of a premium cab service focused on comfort and reliability</li>
-        <li><strong>Snoozed In</strong>: Global platform for booking sleeping pods for travelers</li>
-        <li><strong>Young Changemakers Program, IIM Ranchi</strong>: Selected as one of the top performers</li>
+        <li><strong>Acilert</strong>: Accident detection & alert system</li>
+        <li><strong>Paalki</strong>: Co-founder of a luxury cab company</li>
+        <li><strong>Snoozed In</strong>: Global sleeping pod booking platform</li>
+        <li><strong>IIM Ranchi</strong>: Young Changemakers Program – Top performer</li>
       </ul>
+    </div>
+  </section>
 
-      <h2>Leadership</h2>
-      <ul>
-        <li>4 years of school leadership — Deputy Sports Captain, Deputy Ambassador, Vice House Captain</li>
-        <li>Selected for Netflix Fraternity — Masters' Union’s top-performing group</li>
-      </ul>
-    </section>
+  <section class="content-section" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="contact-links">
+        <a href="mailto:tanish@example.com">📧 Email</a>
+        <a href="tel:+911234567890">📞 Phone</a>
+        <a href="https://www.linkedin.com/in/tanishrajgarhia" target="_blank">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Let’s Connect</h2>
-      <p>Always up for collaborations or startup conversations. Reach out!</p>
-      <a href="mailto:your@email.com" class="btn">📧 Email</a>
-      <a href="https://www.linkedin.com/in/yourprofile" class="btn">🔗 LinkedIn</a>
-    </section>
-  </main>
+  <button class="floating-btn">Let's Talk 🚀</button>
 
-  <button class="scrollTop" onclick="scrollToTop()">↑</button>
-
-  <script>
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
